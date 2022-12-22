@@ -10,7 +10,7 @@
 
    <img src="https://img.shields.io/github/repo-size/dotzenith/AvatarQuotes?color=96CDFB&labelColor=302D41&style=for-the-badge">
    
-   <img src="https://img.shields.io/github/workflow/status/dotzenith/AvatarQuotes/Tests?color=ABE9B3&labelColor=302D41&style=for-the-badge&label=Tests"/>
+   <img src="https://img.shields.io/github/actions/workflow/status/dotzenith/AvatarQuotes/test.yml?branch=main&color=ABE9B3&labelColor=302D41&style=for-the-badge&label=Tests"/>
    <br>
 </div>
 
