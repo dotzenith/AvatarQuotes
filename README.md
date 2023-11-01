@@ -37,7 +37,7 @@ AvatarQuotes is a 1-man effort as of now. As a consequence of my own hubris, the
 - The transcripts found on the [Avatar Wiki](https://avatar.fandom.com/wiki/Avatar_Wiki) are considered the only source of truth. As such, if you're correcting or adding a quote, please link the appropriate page in the PR description.
 
 - Please run the `tests/helpers.py` script to make sure a new `Quotes.csv` file is generated from the changes you made.
-  - The script uses pandas, which can be installed by running the following: `pip3 install pandas`
+  - The script uses polars, which can be installed by running the following: `pip3 install polars`
 
 - There are no plans on adding Korra just yet, but if there's enough interest, I'd be more than happy to open a discussion and we can discuss how to proceed with that.
 

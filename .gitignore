@@ -3,3 +3,4 @@ Avatar_Env/
 csv_script.py
 __pycache__/
 .pytest_cache/
+myenv
