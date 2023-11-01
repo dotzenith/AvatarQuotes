@@ -38,7 +38,7 @@ class TestDataset:
                                "Long Feng", "General Sung", "Pong", "Yu", "The Boulder", "Yung",
                                "Iio", "Lee", "Gansu", "Ursa", "Kwan", "Piandao", "Kuruk",
                                "Yangchen", "Lion Turtle", "Hama", "Momo", "Appa"}
-        df_characters = set(self.dataframe.Character.unique())
+        df_characters = set(self.dataframe.character.unique())
 
         assert expected_characters == df_characters
 
@@ -48,7 +48,7 @@ class TestDataset:
         """
         
         expected_nations = {"Water", "Earth", "Fire", "Air", "None"}
-        df_nations = set(self.dataframe.Nation.unique())
+        df_nations = set(self.dataframe.nation.unique())
 
         assert expected_nations == df_nations
     
@@ -58,7 +58,7 @@ class TestDataset:
         """
        
         expected_bending_types = {"Water", "Earth", "Fire", "Air", "None", "All"}
-        df_bending_types = set(self.dataframe.Bending.unique())
+        df_bending_types = set(self.dataframe.bending.unique())
 
         assert expected_bending_types == df_bending_types
 
@@ -95,7 +95,7 @@ class TestDataset:
                               "The Day of Black Sun, Part 2: The Eclipse",
                               "Sozin's Comet, Part 3: Into the Inferno", "Sokka's Master",
                               "The Southern Raiders", "The Ember Island Players"}
-        df_episodes = set(self.dataframe.Episode.unique())
+        df_episodes = set(self.dataframe.episode.unique())
 
         assert expected_episodes == df_episodes
     
@@ -105,7 +105,7 @@ class TestDataset:
         """
     
         expected_books = {"Water", "Earth", "Fire"}
-        df_books = set(self.dataframe.Book.unique())
+        df_books = set(self.dataframe.book.unique())
 
         assert expected_books == df_books
 

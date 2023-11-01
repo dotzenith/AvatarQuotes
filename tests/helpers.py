@@ -2,7 +2,7 @@
 A few helper functions for tests and compiling a big csv file from all of the smaller ones
 """
 
-import pandas as pd
+import polars as pl
 from pathlib import Path
 import subprocess
 
@@ -21,7 +21,7 @@ def get_git_repo() -> str:
     return subprocess.Popen(['git', 'rev-parse', '--show-toplevel'], 
                                  stdout=subprocess.PIPE).communicate()[0].rstrip().decode('utf-8')
 
-def make_dataframe() -> pd.DataFrame:
+def make_dataframe() -> pl.DataFrame:
     """
     Makes a DataFrame from all of the CSV files from all seasons
     """
@@ -33,17 +33,17 @@ def make_dataframe() -> pd.DataFrame:
     for sub_dir in sub_dirs:
         files = Path(sub_dir).glob("*.csv")
         for file in files:
-            dfs.append(pd.read_csv(file, sep="|"))
+            dfs.append(pl.read_csv(file, separator="|"))
 
-    return pd.concat(dfs)
+    return pl.concat(dfs)
 
-def output_csv(dataframe: pd.DataFrame) -> None:
+def output_csv(dataframe: pl.DataFrame) -> None:
     """
     A simple wrapper to output a given dataframe to csv
     """
    
     git_repo = get_git_repo()
-    dataframe.to_csv(f"{git_repo}/Quotes.csv", sep="|", index=False)
+    dataframe.write_csv(f"{git_repo}/Quotes.csv", separator="|")
 
 if __name__ == "__main__":
     main()
