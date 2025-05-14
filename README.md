@@ -22,7 +22,7 @@
 
   AvatarQuotes is a simple and community oriented source of quotes from Avatar: The Last Airbender. 
 
-  <img src="https://github.com/dotzenith/dotzenith/blob/main/assets/AvatarQuotes/AvatarQuotes.gif" alt="lovesay gif">
+  <img src="https://assets.danshu.co/AvatarQuotes/AvatarQuotes.gif" alt="lovesay gif">
 
   *Disclaimer*: I am in no way shape or form associated with Nickelodeon and do not claim any of this material as my own.
 
