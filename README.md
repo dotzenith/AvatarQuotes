@@ -9,8 +9,6 @@ to do something with it one day
 
   AvatarQuotes is a simple and community oriented source of quotes from Avatar: The Last Airbender. 
 
-  <img src="https://assets.danshu.co/AvatarQuotes/AvatarQuotes.gif" alt="lovesay gif">
-
   *Disclaimer*: I am in no way shape or form associated with Nickelodeon and do not claim any of this material as my own.
 
 ---
